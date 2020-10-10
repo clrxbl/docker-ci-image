@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:latest
+FROM debian:buster-slim
 USER root
 
 RUN apt-get update
