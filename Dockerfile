@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian:buster
 USER root
 
 RUN apt update && apt install -y wget gnupg
