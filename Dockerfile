@@ -1,7 +1,7 @@
 FROM debian:buster-slim
 USER root
 
-RUN apt update && apt install sudo wget curl
+RUN apt update && apt install -y sudo wget curl
 RUN wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 RUN apt install -y software-properties-common apt-transport-https ca-certificates gnupg
 RUN sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
