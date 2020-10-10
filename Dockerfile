@@ -7,5 +7,5 @@ RUN apt install -y software-properties-common apt-transport-https ca-certificate
 RUN add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 RUN apt update
 
-RUN apt install -y adoptopenjdk-11-hotspot ca-certificates-java maven git
+RUN apt install -y adoptopenjdk-11-hotspot maven git
 RUN apt clean
