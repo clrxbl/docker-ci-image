@@ -9,3 +9,5 @@ RUN apt update
 
 RUN apt install -y adoptopenjdk-14-hotspot maven git
 RUN apt clean
+
+RUN wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /usr/local/bin/mc
